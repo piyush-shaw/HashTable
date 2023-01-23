@@ -1,7 +1,7 @@
 ﻿using System;
 namespace HashTables
 {
-	//creating the MapNode to add keyvalue pair to linkedlist at position given by hash
+	//Creating the MapNode to add keyvalue pair to linkedlist at position given by hash
 	public class MyMapNode<K,V>
 	{
 		private readonly int size;
