@@ -1,4 +1,26 @@
 ﻿<Properties StartupConfiguration="{5D04AF56-A8B5-4156-8F2E-ECF1E8DB55A9}|Default">
-  <MonoDevelop.Ide.ItemProperties.HashTables FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="HashTables/Program.cs">
+    <Files>
+      <File FileName="HashTables/Program.cs" Line="1" Column="18" />
+      <File FileName="HashTables/MyMapNode.cs" Line="89" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HashTables" expanded="True">
+            <Node name="HashTables" expanded="True">
+              <Node name="MyMapNode.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.HashTables PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
 </Properties>
