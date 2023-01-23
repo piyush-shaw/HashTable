@@ -44,8 +44,29 @@ namespace HashTables
 			linkedList.AddLast(item);
         }
 
-		//Method to get array position i.e 0,1 etc and linkedlist
-		protected LinkedList<KeyValue<K,V>> GetLinkedList(int position)
+		//Removing key and value in the linked list
+        public void Remove(K key,V value)
+        {
+            int position = GetArrayPosition(key);
+            LinkedList<KeyValue<K, V>> linkedList = GetLinkedList(position);
+            bool itemFound = false;
+            KeyValue<K, V> foundItem = default(KeyValue<K, V>);
+            foreach (KeyValue<K, V> item in linkedList)
+            {
+                if (item.Key.Equals(key))
+                {
+                    itemFound = true;
+                    foundItem = item;
+                }
+            }
+            if (itemFound)
+            {
+                linkedList.Remove(foundItem);
+            }
+        }
+
+        //Method to get array position i.e 0,1 etc and linkedlist
+        protected LinkedList<KeyValue<K,V>> GetLinkedList(int position)
 		{
 			LinkedList<KeyValue<K, V>> linkedList = items[position];
 			if (linkedList == null)

@@ -7,7 +7,7 @@ internal class Program
         Console.WriteLine("Welcome to Data Structure - Hash Table !!! ");
         MyMapNode<string, string> hash = new MyMapNode<string, string>(5);
         MyMapNode<string, string> para = new MyMapNode<string, string>(17);
-        Console.WriteLine("\n1.Create HashTable \n2.Find Frequency Of Word ");
+        Console.WriteLine("\n1.Create HashTable \n2.Find Frequency Of Word \n3.Remove Word");
         Console.WriteLine("Enter the option to choice from above ");
         int option = Convert.ToInt32(Console.ReadLine());
         switch (option)
@@ -92,6 +92,10 @@ internal class Program
                 Console.WriteLine("16th index value " + para16);
                 Console.WriteLine("17th index value " + para17);
                 Console.WriteLine("18th index value " + para18);
+                break;
+            case 3:
+                para.Remove("17", "avoidable");
+                Console.WriteLine("Word is removed from the paragraph");
                 break;
             default:
                 Console.WriteLine("Please enter correct option ");
